@@ -1,13 +1,26 @@
-# Description
-This lab simulates a cash register. The user is prompted for the cost of 3 items. The cash register calculates the total. The cash register then gives a report as to how many dollars, quarters, dimes, nickels and pennies are required. <br />
-This lab will test your ability to retrieve information, perform calculations, and prepare a report.<br />
-Your program should be called cashRegister.c and should run as follows:<br />
+# Description:
+This lab simulates a cash register. The user is prompted for the cost of 3 items. The cash register calculates the total.
+The cash register then gives a report as to how many dollars, quarters, dimes, nickels and pennies are required.
+This lab will test your ability to retrieve information, perform calculations, and prepare a report.
+Your program should be called cashRegister.c and should run as follows:
 
-Cash Register
+    Cash Register
 
-Enter the cost of item 1: $<cost_item1>
-Enter the cost of item 2: $<cost_item2>
-Enter the cost of item 3: $<cost_item3>
+    Enter the cost of item 1: $<cost_item1>
+    Enter the cost of item 2: $<cost_item2>
+    Enter the cost of item 3: $<cost_item3>
 
-The total cost is $<total_cost>
-## Sample Run
+    The total cost is $<total_cost>
+
+# Sample Run:
+A sample run is as follows:
+
+    Cash Register
+
+    Enter the cost of item 1: $12.50
+    Enter the cost of item 2: $13.25
+    Enter the cost of item 3: $5.17
+
+    The total cost is $30.92
+
+    You used 30 dollars, 3 quarters, 1 dimes, 1 nickels and 2 pennies.
