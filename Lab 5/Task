@@ -37,7 +37,7 @@ The Problem
     You have to determine if any functions are required. It is always best for structured programming that each function perform a specific task.
     You need to determine if any loops are required.
     Be wary of any divide-by-zero possibilities in the code.
-    Be sure to clear out your input buffer whenever required. See InputBuffer.c as an example of clearing an input buffer whenever required.
+    Be sure to clear out your input buffer whenever required.
     You have to decide on your mechanism of input and output that is user friendly. You may want to format your output into a neat table.
 
 
