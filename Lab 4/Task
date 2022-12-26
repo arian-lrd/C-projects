@@ -63,6 +63,8 @@ Your StudentInfo.c should contain the following:
 
 StudentMain.c will prompt for student Information and print out the average mark, the maximum mark, and the minimum mark. Keep in mind that the student could be studying up to 6 subjects. 
 
+
+
 # Sample Run:
 A sample run is as follows:
 
