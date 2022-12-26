@@ -1,0 +1,214 @@
+# Description:
+This lab will test your ability to use structures and arrays of structures.
+
+Your program files should be called Employee.c and Employee.h.
+Your program will keep a database of employee information through an array of structures of type Employee.
+Your program should be able to display the data of all employees in the database, add an employee to the database, update the salary of an existing employee, and remove an employee from the database. The database is limited in size. Your program should run as follows:
+
+    The Employee data structure should appear in Employee.h and contain the following elements:
+    id - integer
+    age - integer
+    salary - double precision floating point
+    The remainder of your code should appear in Employee.c which will include Employee.h.
+    There should be a maximum of SIZE employees in the database, where SIZE=4. This means you create an array of type Employee that can hold up to SIZE employees.
+    The user interface should look as follows:
+    ---=== EMPLOYEE DATA ===---
+1. Display Employee Information
+2. Add Employee
+3. Update Employee Salary
+4. Remove Employee
+0. Exit
+Please select from the above options:
+Display Employee Information should display employee id, age and salary for each employee. The loop construct will be run for SIZE times and will only display Employee data where the EmployeeID is greater than 0.
+Add Employee will look for an open spot in the employee array (where employee id=0), then will prompt the user for employee data. If the employee database is full, an error message is printed to the screen:
+ERROR!!! Maximum Number of Employees Reached.
+Update Employee Salary will prompt the user for the employee's id and search the employee array for the employee by id. If the employee is found, the user is prompted for the new salary. If the employee is not found, an error message is printed:
+*** ERROR: Employee ID not found! ***
+Remove Employee will prompt the user for the employee's id and search the employee array for the employee by id. If the employee is found, the employee is removed from the array by setting the employee's id to 0. If the employee is not found, an error message is printed:
+*** ERROR: Employee ID not found! ***
+Exit will exit the program. As the program is exiting, the following is printed to the screen:
+Exiting Employee Data Program. Good Bye!!!
+Any selection other than 0-4 will result in the following printed to the screen:
+ERROR: Incorrect Option: Try Again
+
+
+# Sample Run:
+A sample run is as follows:
+
+    ---=== EMPLOYEE DATA ===---
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 5
+    ERROR: Incorrect Option: Try Again
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 1
+
+    EMP ID EMP AGE EMP SALARY
+    ====== ======= ==========
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 2
+    Adding Employee
+    ===============
+    Enter Employee ID: 222
+    Enter Employee Age: 22
+    Enter Employee Salary: 22222.22
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 2
+    Adding Employee
+    ===============
+    Enter Employee ID: 333
+    Enter Employee Age: 33
+    Enter Employee Salary: 33333.33
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 2
+    Adding Employee
+    ===============
+    Enter Employee ID: 444
+    Enter Employee Age: 44
+    Enter Employee Salary: 44444.44
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 2
+    Adding Employee
+    ===============
+    Enter Employee ID: 555
+    Enter Employee Age: 55
+    Enter Employee Salary: 55555.55
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 2
+    Adding Employee
+    ===============
+    ERROR!!! Maximum Number of Employees Reached
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 1
+    EMP ID EMP AGE EMP SALARY
+    ====== ======= ==========
+    222 22 22222.22
+    333 33 33333.33
+    444 44 44444.44
+    555 55 55555.55
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 3
+    Update Employee Salary
+    ======================
+    Enter Employee ID: 123
+    *** ERROR: Employee ID not found! ***
+    Enter Employee ID: 321
+    *** ERROR: Employee ID not found! ***
+    Enter Employee ID: 333
+    The current salary is 33333.33
+    Enter Employee New Salary: 99999.99
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 1
+    EMP ID EMP AGE EMP SALARY
+    ====== ======= ==========
+    222 22 22222.22
+    333 33 99999.99
+    444 44 44444.44
+    555 55 55555.55
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 4
+    Remove Employee
+    ===============
+    Enter Employee ID: 789
+    *** ERROR: Employee ID not found! ***
+    Enter Employee ID: 987
+    *** ERROR: Employee ID not found! ***
+    Enter Employee ID: 333
+    Employee 333 will be removed
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 1
+    EMP ID EMP AGE EMP SALARY
+    ====== ======= ==========
+    222 22 22222.22
+    444 44 44444.44
+    555 55 55555.55
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 2
+    Adding Employee
+    ===============
+    Enter Employee ID: 666
+    Enter Employee Age: 66
+    Enter Employee Salary: 66666.66
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 1
+    EMP ID EMP AGE EMP SALARY
+    ====== ======= ==========
+    222 22 22222.22
+    666 66 66666.66
+    444 44 44444.44
+    555 55 55555.55
+
+    1. Display Employee Information
+    2. Add Employee
+    3. Update Employee Salary
+    4. Remove Employee
+    0. Exit
+    Please select from the above options: 0
+    Exiting Employee Data Program. Good Bye!!! 
