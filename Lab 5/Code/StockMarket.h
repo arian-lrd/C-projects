@@ -27,3 +27,4 @@ void CompanyValue(struct Company* companies);
 void UserInput(struct Company* companies);
 void FinalOutput(const struct Company* companies);
 void utilClearInputBuffer();
+
