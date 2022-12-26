@@ -1,0 +1,78 @@
+### Description:
+The Dividend Yield:
+This lab will test your ability to design and implement software from a real world problem.
+
+There are many well known valuation techniques for determining the value of a stock. For mature, well-established companies, valuation can be determined through its dividend yield. Dividends are payments a company makes to share profits with its stockholders. They're paid on a regular basis.
+
+The annual dividend is the dividend paid per share each year. For instance, if a company pays a dividend of $0.50 per share and you have 1000 shares, you will receive a dividend payment of $500 per year (or $125 per quarter).
+
+The dividend yield is the dividend per share divided by the price per share. This means, a certain percentage of the share price is returned as a dividend. For instance, if a company pays a dividend of $0.50 per share and the share price is $12.00, the dividend yield is 100%*0.50/12.00 or 4.17%.
+-To put it as a formula: Yield = 100% x Dividend_Per_Share / Share_Price
+
+Some companies cannot afford to pay the dividends they offer and have to cut their dividend. One should look at the dividend payout ratio to see if a company can in fact afford the dividend it offers. A dividend payout ratio of 1.00 means the company is paying all its profits out as dividends. But that is another story, and not relevant to this lab.
+
+The following is a list of well-known well-established companies that offer dividends:
+Company	Stock Symbol	Share Price	Annual Dividend	Dividend Yield	Dividend Payout Ratio
+TC Energy	TRP.TO	$55.00	$3.24	5.89%	0.685
+Canadian Utilities	CU.TO	$31.70	$1.76	5.55%	1.181
+Bank of Nova Scotia	BNS.TO	$70.08	$3.60	5.13%	0.679
+TransAlta Renewables	RNW.TO	$21.75	$0.94	4.32%	2.848
+Toronto Dominion Bank	TD.TO	$74.81	$3.16	4.22%	0.491
+From an analysis of the above table, you probably wouldn't want to purchase shares in Canadian Utilities or TransAlta Renewables, as these companies may have problems paying their dividends in the future. But if they are sitting on a lot of cash then there isn't anything to worry about, for now.
+The Problem
+
+    Prompt the user to enter data for a company. The data required is:
+        the company name,
+        the company's stock symbol,
+        the share price, and
+        the annual dividend per share.
+    The user will enter data for five companies. You can use the data in the above table if you wish (ignore the dividend payout ratio).
+    Calculate the dividend yield for each company as follows:
+    the dividend yield = 100% x dividend_per_share / share_price.
+    Given the current rate of inflation, a dividend yield of 5% is considered to be good. If a company has a yield of over 5% then that company is undervalued. If a company has a yield of under 5% then that company is considered to be overvalued. If a company has a yield of exactly 5% then that company is considered fully valued.
+    Go through each company and determine whether the company is undervalued, overvalued or fully valued.
+    Print a report at the end with the following information:
+    company name, stock symbol, share price, annual dividend, dividend yield, valuation.
+    You need to determine your data structure(s) as well as the types for each variable in that structure. You may wish to add variables for the dividend yield and the valuation to your structure.
+    You have to determine if any functions are required. It is always best for structured programming that each function perform a specific task.
+    You need to determine if any loops are required.
+    Be wary of any divide-by-zero possibilities in the code.
+    Be sure to clear out your input buffer whenever required. See InputBuffer.c as an example of clearing an input buffer whenever required.
+    You have to decide on your mechanism of input and output that is user friendly. You may want to format your output into a neat table.
+
+
+
+### Sample Run:
+A sample run is as follows:
+
+        Enter the company name: TC Energy
+        Enter TC Energy's stock symbol: TRP.TO
+        Enter TC Energy's current stock price: 55
+        Enter TC Energy's annual dividend per share: 3.24
+
+        Enter the company name: Canadian Utilities
+        Enter Canadian Utilities's stock symbol: CU.TO
+        Enter Canadian Utilities's current stock price: 31.70
+        Enter Canadian Utilities's annual dividend per share: 1.76
+
+        Enter the company name: Bank of Nova Scotia
+        Enter Bank of Nova Scotia's stock symbol: BNS.TO
+        Enter Bank of Nova Scotia's current stock price: 70.08
+        Enter Bank of Nova Scotia's annual dividend per share: 3.60
+
+        Enter the company name: TransAlta Renewables
+        Enter TransAlta Renewables's stock symbol: RNW.TO
+        Enter TransAlta Renewables's current stock price: 21.75
+        Enter TransAlta Renewables's annual dividend per share: 0.94
+
+        Enter the company name: Toronto Dominion Bank
+        Enter Toronto Dominion Bank's stock symbol: TD.TO
+        Enter Toronto Dominion Bank's current stock price: 74.81
+        Enter Toronto Dominion Bank's annual dividend per share: 3.16
+
+                      COMPANY   SYMBOL  PRICE   DIV   YIELD   VALUATION
+                    TC Energy   TRP.TO  55.00  3.240  5.891   Under Valued
+           Canadian Utilities    CU.TO  31.70  1.760  5.552   Under Valued
+          Bank of Nova Scotia   BNS.TO  70.08  3.600  5.137   Under Valued
+         TransAlta Renewables   RNW.TO  21.75  0.940  4.322    Over Valued
+        Toronto Dominion Bank    TD.TO  74.81  3.160  4.224    Over Valued  
